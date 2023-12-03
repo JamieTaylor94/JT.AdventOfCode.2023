@@ -4,5 +4,6 @@
     &lt;TestId&gt;xUnit::D7CDE898-D2C8-4704-AC7D-55F40D04F4AB::net6.0::JT.AdventOfCode._2023.DayOne.DayOneTests&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::D7CDE898-D2C8-4704-AC7D-55F40D04F4AB::net6.0::JT.AdventOfCode._2023.DayTwo.DayTwoTests.GameConfiguration_SampleInput_ContainsRedCubes&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::D7CDE898-D2C8-4704-AC7D-55F40D04F4AB::net6.0::JT.AdventOfCode._2023.DayTwo.DayTwoTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::D7CDE898-D2C8-4704-AC7D-55F40D04F4AB::net6.0::JT.AdventOfCode._2023.DayTwo.CubeConundrumTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

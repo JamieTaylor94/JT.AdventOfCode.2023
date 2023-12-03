@@ -1,6 +1,6 @@
 namespace JT.AdventOfCode._2023.DayOne;
 
-public class DayOneTests
+public class SnowCalibrationTests
 {
     private static readonly string FilePath = $"{Directory.GetCurrentDirectory()}/DayOne/Resources";
     private readonly SnowCalibration _snowCalibration = new();

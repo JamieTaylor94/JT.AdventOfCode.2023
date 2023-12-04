@@ -1,36 +1,34 @@
 namespace JT.AdventOfCode._2023.DayOne;
 
-public class SnowCalibrationTests
+public class SnowCalibrationTests : InputReader
 {
-    private static readonly string FilePath = $"{Directory.GetCurrentDirectory()}/DayOne/Resources";
+    private readonly string[] _gameInput = InputByLine("DayOne");
     private readonly SnowCalibration _snowCalibration = new();
 
     [Fact]
-    public void PartOne_SampleInput()
+    public void PartOne_SampleInput_ReturnsSumOfDigits()
     {
-        var lines = File.ReadAllLines($"{FilePath}/sample-1.txt");
-        Assert.Equal(142, _snowCalibration.Calculate(lines));
+        var input = InputByLine("DayOne", "sample-1.txt");
+        Assert.Equal(142, _snowCalibration.Calculate(input));
     }
 
     [Fact]
-    public void PartOne_FullInput()
+    public void PartOne_FullInput_ReturnsSumOfDigits()
     {
-        var lines = File.ReadAllLines($"{FilePath}/day1.txt");
-        Assert.Equal(54573, _snowCalibration.Calculate(lines));
+        Assert.Equal(54573, _snowCalibration.Calculate(_gameInput));
     }
 
     [Fact]
-    public void PartTwo_SampleInput()
+    public void PartTwo_SampleInput_ReturnsSumOfDigits_And_WrittenNumbers()
     {
-        var lines = File.ReadAllLines($"{FilePath}/sample-2.txt");
-        Assert.Equal(281, _snowCalibration.CalculateWithWrittenNumbers(lines));
+        var input = InputByLine("DayOne", "sample-2.txt");
+        Assert.Equal(281, _snowCalibration.CalculateWithWrittenNumbers(input));
     }
     
     [Fact]
-    public void PartTwo_FullInput()
+    public void PartTwo_FullInput_ReturnsSumOfDigits_And_WrittenNumbers()
     {
-        var lines = File.ReadAllLines($"{FilePath}/day1.txt");
-        Assert.Equal(54591, _snowCalibration.CalculateWithWrittenNumbers(lines));
+        Assert.Equal(54591, _snowCalibration.CalculateWithWrittenNumbers(_gameInput));
     }
 
     [Fact]

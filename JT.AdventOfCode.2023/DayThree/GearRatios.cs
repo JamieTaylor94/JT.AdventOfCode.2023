@@ -40,26 +40,6 @@ public class GearRatios
         }
         return sum;
     }
-    
-    public int CalculateGears()
-    {
-        var sum = 0;
-
-        for (var row = 0; row < _rowLength; row++)
-        {
-            for (var column = 0; column < _columnLength; column++)
-            {
-                if (_grid[row, column] == '*')
-                {
-                    var cell = new Cell(row, column, _grid);
-                    
-                }
-            }
-        }
-
-        return sum;
-    }
-
 
     private char[,] CreateGrid(string[] input)
     {
